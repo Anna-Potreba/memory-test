@@ -1,25 +1,41 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+const Item = () => {
+  return <p>Item</p>
+}
+const Item2 = () => {
+  return <p>Itemкеек2</p>
+  
+}
+const Item3 = () => {
+  return <p> Item3 укеке</p>
+
+}
+
+
+
+
+
 function App() {
+  let red = false
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Item />
+      <Item2 />
+    {/* если red = true  */}
+      {red && <div>
+        <Item2 />
+        <Item2 />
+        <Item2 />
+        <Item2 />
+        <Item2 />
+        <Item3 />
+      </div>}
+     
     </div>
-  );
+  )
 }
 
 export default App;
